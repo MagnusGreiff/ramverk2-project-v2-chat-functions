@@ -10,8 +10,6 @@ let returnText = (connecting, disconnecting, timeStr, id, tex, me) => {
         text = "(" + timeStr + ") " + id + tex;
     } else if (disconnecting) {
         text = "(" + timeStr + ") <b>" + id + tex + "</b>";
-    } else if (me) {
-        text = "(" + timeStr + ") <b>" + tex + "</b>";
     } else {
         text = "(" + timeStr + ") <b>" + id + " said</b>: " + tex + "<br>";
     }
@@ -55,10 +53,8 @@ let checkProtocol = async (event, protocol, state) => {
 let checkText = async (text, insert = false, id = false) => {
     let rePost = new RegExp(/\[post\](\d+)\[\/post\]/g);
     let reUser = new RegExp(/\[user\](\d+)\[\/user\]/g);
-    let reMe = new RegExp(/^\/me/);
     let matchPost = rePost.exec(text);
     let matchUser = reUser.exec(text);
-    let matchMe = reMe.exec(text);
 
     if (matchUser !== null) {
         while (matchUser !== null) {
@@ -90,12 +86,6 @@ let checkText = async (text, insert = false, id = false) => {
                 return text;
             }
         }
-    }
-
-    while (matchMe !== null) {
-        text = text.replace("/me", "");
-        text = "* " + id + text;
-        matchMe = null;
     }
 
 
