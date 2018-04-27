@@ -1,0 +1,32 @@
+version: "2"
+services:
+    test810:
+        build:
+            context: .
+            dockerfile: docker/node810/dockerfile
+        environment:
+            - DBWEBB_DSN=mongodb://mongodb:27017/history
+        volumes:
+            - ./:/app/
+            - /app/node_modules/
+        command: "npm test"
+    test830:
+        build:
+            context: .
+            dockerfile: docker/node830/dockerfile
+        environment:
+            - DBWEBB_DSN=mongodb://mongodb:27017/history
+        volumes:
+            - ./:/app/
+            - /app/node_modules/
+        command: "npm test"
+    test860:
+        build:
+            context: .
+            dockerfile: docker/node860/dockerfile
+        environment:
+            - DBWEBB_DSN=mongodb://mongodb:27017/history
+        volumes:
+            - ./:/app/
+            - /app/node_modules/
+        command: "npm test"

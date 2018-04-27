@@ -7,10 +7,7 @@
         "test-nyc": "nyc --all --reporter=html --reporter=text mocha 'test/**/*.js' --exit",
         "test-scrutinizer": "nyc --all --reporter=clover mocha test/**/*.js --exit",
         "test": "mocha 'test/**/*.js'",
-        "test-browser": "npm run test-nyc && open coverage/index.html",
-        "test-docker-1": "docker-compose run -e TZ=Europe/Stockholm test860",
-        "test-docker-2": "docker-compose run -e TZ=Europe/Stockholm test830",
-        "test-docker-3": "docker-compose run -e TZ=Europe/Stockholm test810"
+        "test-browser": "npm run test-nyc && open coverage/index.html"
     },
     "author": "Magnus Greiff",
     "license": "ISC",
