@@ -1,6 +1,6 @@
 {
     "name": "chat-functions",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "Chat functions to use with chat.",
     "main": "index.js",
     "scripts": {
