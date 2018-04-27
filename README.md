@@ -18,6 +18,7 @@ To install this module the only thing you need to do is: `npm install chat-funct
 ## Using
 
 You need to import the module to your project like this: `const cf = require("chat-functions")` and then you can use the following functions:
-* setSubProtocol()
 * checkText()
-* checkProtocol()
+* setSubProtocol()
+* checkProtocol
+* outputLog

@@ -48,8 +48,6 @@ let checkProtocol = async (event, protocol, state) => {
     return text;
 };
 
-/* TODO: Fix insert to database bug. Make it insert only if text is not undefined. */
-
 let checkText = async (text, insert = false, id = false) => {
     let rePost = new RegExp(/\[post\](\d+)\[\/post\]/g);
     let reUser = new RegExp(/\[user\](\d+)\[\/user\]/g);

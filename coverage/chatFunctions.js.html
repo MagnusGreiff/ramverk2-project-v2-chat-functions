@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for chatFunctions.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="prettify.css" />
+    <link rel="stylesheet" href="base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="index.html">All files</a> chatFunctions.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">64.06% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>41/64</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">42.86% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>9/21</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">80% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>4/5</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">64.06% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>41/64</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">"use strict";
+&nbsp;
+const api = require('./api');
+&nbsp;
+let returnText = (connecting, disconnecting, timeStr, id, tex, me) =&gt; {
+&nbsp;
+    let text;
+&nbsp;
+    if (connecting) {
+        text = "(" + timeStr + ") " + id + tex;
+    } else if (disconnecting) {
+        text = "(" + timeStr + ") &lt;b&gt;" + id + tex + "&lt;/b&gt;";
+    } else {
+        text = "(" + timeStr + ") &lt;b&gt;" + id + " said&lt;/b&gt;: " + tex + "&lt;br&gt;";
+    }
+&nbsp;
+    return text;
+};
+&nbsp;
+let checkProtocol = async (event, protocol, state) =&gt; {
+    let msg, parsedMsg, time, timeStr, connecting, disconnecting, id, text, me;
+&nbsp;
+    // consol.log(state);
+&nbsp;
+    if (protocol == "json") {
+        msg = JSON.parse(event.data);
+        parsedMsg = JSON.parse(msg.data);
+        time = new Date(parsedMsg.date);
+        timeStr = time.toLocaleTimeString();
+        connecting = parsedMsg.connect;
+        disconnecting = parsedMsg.disconnect;
+        id = parsedMsg.id;
+        me = parsedMsg.me;
+        text = await checkText(parsedMsg.text, state, id);
+    } else {
+        msg = JSON.parse(event.data);
+        time = new Date(msg.date);
+        timeStr = time.toLocaleTimeString();
+        connecting = msg.connect;
+        disconnecting = msg.disconnect;
+        id = msg.id;
+        me = msg.me;
+        text = await checkText(msg.text, state, id);
+    }
+&nbsp;
+    text = returnText(connecting, disconnecting, timeStr, id, text, me);
+&nbsp;
+    return text;
+};
+&nbsp;
+let checkText = async (text, insert = false, id = <span class="branch-0 cbranch-no" title="branch not covered" >false)</span> =&gt; {
+    let rePost = new RegExp(/\[post\](\d+)\[\/post\]/g);
+    let reUser = new RegExp(/\[user\](\d+)\[\/user\]/g);
+    let matchPost = rePost.exec(text);
+    let matchUser = reUser.exec(text);
+&nbsp;
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (matchUser !== null) {
+<span class="cstat-no" title="statement not covered" >        while (matchUser !== null) {</span>
+           let getInformation = <span class="cstat-no" title="statement not covered" >await api.getUserInformation(parseInt(matchUser[1]));</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >           if (getInformation !== undefined) {</span>
+<span class="cstat-no" title="statement not covered" >               text = text.replace('[user]' + matchUser[1] + '[/user]', "&lt;a href='" +</span>
+                   getInformation.link + "' target='_blank'&gt;" +
+                   getInformation.name + "&lt;/a&gt;");
+<span class="cstat-no" title="statement not covered" >               matchUser = await reUser.exec(text);</span>
+           } else {
+<span class="cstat-no" title="statement not covered" >               text = undefined;</span>
+<span class="cstat-no" title="statement not covered" >               return text;</span>
+           }
+       }
+    }
+&nbsp;
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (matchPost !== null) {
+<span class="cstat-no" title="statement not covered" >        while (matchPost !== null) {</span>
+            let getInformation = <span class="cstat-no" title="statement not covered" >await api.getInformation(matchPost[1]);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >            if (getInformation !== undefined) {</span>
+<span class="cstat-no" title="statement not covered" >                text = text.replace('[post]' + matchPost[1] + '[/post]', "&lt;a href='" +</span>
+                    getInformation.link + "' target='_blank'&gt;" +
+                    getInformation.title + "&lt;/a&gt;");
+<span class="cstat-no" title="statement not covered" >                matchPost = await rePost.exec(text);</span>
+            } else {
+<span class="cstat-no" title="statement not covered" >                text = undefined;</span>
+<span class="cstat-no" title="statement not covered" >                return text;</span>
+            }
+        }
+    }
+&nbsp;
+&nbsp;
+    return text;
+};
+&nbsp;
+let setSubProtocol = (protocol) =&gt; {
+    return protocol;
+};
+&nbsp;
+/**
+ * Log output to web browser.
+ *
+ * @param  {string} message to output in the browser window.
+ *
+ * @return {void}
+ */
+let outputLog = <span class="fstat-no" title="function not covered" >as</span>ync (text, t = <span class="branch-0 cbranch-no" title="branch not covered" >null,</span> output) =&gt; {
+    let time;
+    let now;
+    let timestamp;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    if (t !== null) {</span>
+<span class="cstat-no" title="statement not covered" >        time = new Date(t);</span>
+<span class="cstat-no" title="statement not covered" >        timestamp = time.toLocaleTimeString();</span>
+    } else {
+<span class="cstat-no" title="statement not covered" >        now = new Date();</span>
+<span class="cstat-no" title="statement not covered" >        timestamp = now.toLocaleTimeString();</span>
+    }
+&nbsp;
+&nbsp;
+    let message = <span class="cstat-no" title="statement not covered" >await checkText(text);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    if (message !== undefined) {</span>
+<span class="cstat-no" title="statement not covered" >        output.innerHTML += `&lt;div class="chat_output"&gt;</span>
+         &lt;p class="chat_time"&gt;${timestamp}&lt;/p&gt; &lt;p class="chat_message"&gt;${message}&lt;/p&gt;&lt;br&gt;&lt;/div&gt;`;
+<span class="cstat-no" title="statement not covered" >        output.scrollTop = output.scrollHeight;</span>
+    }
+};
+&nbsp;
+&nbsp;
+module.exports = {
+    checkText: checkText,
+    setSubProtocol: setSubProtocol,
+    checkProtocol: checkProtocol,
+    outputLog: outputLog
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Apr 27 2018 14:54:36 GMT+0200 (CEST)
+</div>
+</div>
+<script src="prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="sorter.js"></script>
+</body>
+</html>
