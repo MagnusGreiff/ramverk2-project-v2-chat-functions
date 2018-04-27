@@ -1,0 +1,15 @@
+checks:
+    javascript: true
+
+build:
+    environment:
+        node: '8.6.0'
+        mongodb: '3.2'
+        timezone: 'Europe/Stockholm'
+    tests:
+        override:
+            -
+                command: 'npm run test-scrutinizer'
+                coverage:
+                    file: 'build/coverage/clover.xml'
+                    format: 'clover'
