@@ -4,7 +4,7 @@
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/MagnusGreiff/ramverk2-project-v2-chat-functions/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/MagnusGreiff/ramverk2-project-v2-chat-functions/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/MagnusGreiff/ramverk2-project-v2-chat-functions/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/MagnusGreiff/ramverk2-project-v2-chat-functions/?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/MagnusGreiff/ramverk2-project-v2-chat-functions/badges/build.png?b=master)](https://scrutinizer-ci.com/g/MagnusGreiff/ramverk2-project-v2-chat-functions/build-status/master)
-[![Maintainability](https://api.codeclimate.com/v1/badges/118469484a90405f106e/maintainability)](https://codeclimate.com/github/MagnusGreiff/chat-functions/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/8284b05ecee7b118bf19/maintainability)](https://codeclimate.com/github/MagnusGreiff/ramverk2-project-v2-chat-functions/maintainability)
 
 
 ## About

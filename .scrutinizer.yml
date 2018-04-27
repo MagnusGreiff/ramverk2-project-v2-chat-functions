@@ -4,6 +4,7 @@ checks:
 build:
     environment:
         node: '8.6.0'
+        timezone: 'Europe/Stockholm'
     tests:
         override:
             -
